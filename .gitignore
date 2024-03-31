@@ -1,0 +1,33 @@
+### Flutter ###
+# Flutter/Dart/Pub related
+**/doc/api/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+coverage/
+pubspec_overrides.yaml
+
+# IDEs
+.idea/
+.vscode/
+!.vscode/launch.json
+!.vscode/settings.json
+*.iml
+*.code-workspace
+
+.DS_Store
+
+# Test CI related
+TEST-*.xml
+TEST-*.xml.bak
+testresults.jsonl
+
+.mason/bricks.json
+mason-lock.json
+
+# FVM Version Cache
+.fvm/
