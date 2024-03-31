@@ -16,3 +16,15 @@ Some noticable things:
 - Android and iOS do the same
 - MacOS or Windows host (developer machine) do the same.
 - It seems that it is mandatory to have some "async" load of state - for example BLOC.
+
+
+Flutter info
+
+```dart
+
+Flutter 3.19.4 • channel stable • https://github.com/flutter/flutter.git
+Framework • revision 68bfaea224 (11 days ago) • 2024-03-20 15:36:31 -0700
+Engine • revision a5c24f538d
+Tools • Dart 3.3.2 • DevTools 2.31.1
+
+```
