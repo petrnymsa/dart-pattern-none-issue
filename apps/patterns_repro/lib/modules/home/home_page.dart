@@ -20,6 +20,11 @@ class _Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ! REPRO: This seems to always work.
+    // return EnabledModulesView(modules: [
+    //   ModuleType.timetable,
+    //   ModuleType.absence,
+    // ]);
     // ! REPRO: BLOC seems mandatory too for reproducing issue
     return BlocBuilder<HomePageBloc, HomePageState>(
       builder: (context, state) {

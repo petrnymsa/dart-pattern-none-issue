@@ -1,5 +1,8 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+import 'package:patterns_repro/modules/home/home_page.dart';
+// ! Cyclic import issue?
 import 'package:patterns_repro/shared/router/router.dart';
 
 /// Entry point for  application.
@@ -8,21 +11,17 @@ class Application extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppRouterProvider(builder: _MaterialAppRepro.new);
+    return _MaterialAppRepro();
   }
 }
 
 class _MaterialAppRepro extends StatelessWidget {
-  final GoRouter router;
-
-  const _MaterialAppRepro(this.router);
+  const _MaterialAppRepro();
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      routeInformationParser: router.routeInformationParser,
-      routeInformationProvider: router.routeInformationProvider,
-      routerDelegate: router.routerDelegate,
+    return MaterialApp(
+      home: HomePage(),
     );
   }
 }

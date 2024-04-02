@@ -6,7 +6,7 @@ class EnabledModulesView extends StatelessWidget {
   final List<ModuleType> modules;
 
   // ! REPRO: Change this to trigger issues
-  static const double height = 50;
+  static const double height = 60;
 
   const EnabledModulesView({required this.modules, super.key});
 
